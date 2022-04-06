@@ -1,0 +1,135 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Oswald', sans-serif;
+  background-image: linear-gradient(315deg, #a1e9ff 0%, #fdedd5 74%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+  margin: 0;
+}
+
+body .magic {
+  background-color: #FF8080;
+  color: white;
+  border: 0;
+  border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+  font-size: 16px;
+  padding: 12px 20px;
+  cursor: pointer;
+  position: fixed;
+  top: 20px;
+  letter-spacing: 1px;
+  -webkit-box-shadow: 0 1px black;
+          box-shadow: 0 1px black;
+  z-index: 100;
+}
+
+body .magic:focus {
+  outline: none;
+}
+
+body .magic:active {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  transform: translateY(3px);
+  -webkit-transform: translateY(3px);
+  -moz-transform: translateY(3px);
+  -ms-transform: translateY(3px);
+  -o-transform: translateY(3px);
+}
+
+body .boxes {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  height: 500px;
+  width: 500px;
+  position: relative;
+  transition: .4s ease;
+  -webkit-transition: .4s ease;
+  -moz-transition: .4s ease;
+  -ms-transition: .4s ease;
+  -o-transition: .4s ease;
+}
+
+body .boxes.big {
+  width: 600px;
+  height: 600px;
+}
+
+body .boxes.big .box {
+  transform: rotateZ(360deg);
+  -webkit-transform: rotateZ(360deg);
+  -moz-transform: rotateZ(360deg);
+  -ms-transform: rotateZ(360deg);
+  -o-transform: rotateZ(360deg);
+}
+
+body .boxes .box {
+  background-image: url("https://media.giphy.com/media/l0HlIDueXmcWNTPO0/giphy.gif");
+  background-repeat: no-repeat;
+  background-size: 500px 500px;
+  position: relative;
+  height: 125px;
+  width: 125px;
+  transition: 0.4s ease;
+  -webkit-transition: 0.4s ease;
+  -moz-transition: 0.4s ease;
+  -ms-transition: 0.4s ease;
+  -o-transition: 0.4s ease;
+}
+
+body .boxes .box::after {
+  content: "";
+  background-color: #FF8080;
+  position: absolute;
+  top: 8px;
+  right: -15px;
+  height: 100%;
+  width: 15px;
+  transform: skewY(45deg);
+  -webkit-transform: skewY(45deg);
+  -moz-transform: skewY(45deg);
+  -ms-transform: skewY(45deg);
+  -o-transform: skewY(45deg);
+}
+
+body .boxes .box::before {
+  content: "";
+  background-color: #ff5d5d;
+  position: absolute;
+  bottom: -15px;
+  left: 8px;
+  height: 15px;
+  width: 100%;
+  transform: skewY(45deg);
+  -webkit-transform: skewX(45deg);
+}
+/*# sourceMappingURL=style.css.map */
